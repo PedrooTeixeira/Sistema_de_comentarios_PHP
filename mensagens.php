@@ -7,7 +7,7 @@ Class Mensagens{
     //Função contrutora para conexão automática com banco de dados
     public function __construct(){
         try{
-            $this->pdo = new PDO("mysql:dbname=id7424184_crud;host=localhost;","id7424184_root","230612");
+            $this->pdo = new PDO("mysql:dbname=id7424184_crud;host=localhost;","user","password");
         }catch(PDOException $e){
             die($e->getMessage());
         }
